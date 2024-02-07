@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Two Boxes</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-4">
+            <button type="button" class="btn btn-primary" style="background-color: #F24C3D;" onclick="moveBox('#F24C3D')">Monday</button><br>
+            <button type="button" class="btn btn-primary" style="background-color: #6895D2;" onclick="moveBox('#6895D2')">Tuesday</button><br>
+            <button type="button" class="btn btn-primary" style="background-color: #7360DF;" onclick="moveBox('#7360DF')">Wednesday</button><br>
+            <button type="button" class="btn btn-primary" style="background-color: #FDBF60;" onclick="moveBox('#FDBF60')">Thursday</button><br>
+            <button type="button" class="btn btn-primary" style="background-color: #FFB0B0;" onclick="moveBox('#FFB0B0')">Friday</button><br>
+            <button type="button" class="btn btn-primary" style="background-color: #F3B95F;" onclick="moveBox('#F3B95F')">Saturday</button><br>
+            <button type="button" class="btn btn-primary" style="background-color: #FFD95A;" onclick="moveBox('#FFD95A')">Sunday</button>
+        </div>
+        <div class="col-md-6">
+            <div id="box1" class="box" ontransitionend="handleTransitionEnd(this)"></div>
+            <div id="box2" class="box"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
